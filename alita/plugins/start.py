@@ -17,6 +17,7 @@
 
 
 from pyrogram import filters
+from pyrogram import random
 from pyrogram.errors import MessageNotModified, QueryIdInvalid, UserIsBlocked
 from pyrogram.types import CallbackQuery, Message
 
@@ -32,7 +33,13 @@ from alita.utils.start_utils import (
     get_private_note,
     get_private_rules,
 )
-
+PHOTO = ["https://te.legra.ph/file/df37fab31dabfe4982476.jpg",
+"https://te.legra.ph/file/0fe32517634a6558cfbf0.jpg",
+"https://te.legra.ph/file/ab91f64e09ab1c5534bc4.jpg",
+"https://te.legra.ph/file/9cfc59c5eac6d86e3148f.jpg",
+"https://te.legra.ph/file/c557935ac8f132b84cda9.jpg",
+"https://te.legra.ph/file/41231f07aaa74efd91d05.jpg",
+"https://te.legra.ph/file/59a12344c4cc1a2842512.jpg"]
 
 @Alita.on_message(
     command("donate") & (filters.group | filters.private),
@@ -87,12 +94,10 @@ async def start(c: Alita, m: Message):
             if not help_msg:
                 return
 
-            await m.reply_text(
-                help_msg,
+            await m.reply_photo(photo= {random.choice(PHOTO)}
+                caption=help_msg,
                 parse_mode="markdown",
-                reply_markup=ikb(help_kb),
-                quote=True,
-                disable_web_page_preview=True,
+                reply_markup=ikb(help_kb)
             )
             return
         try:
