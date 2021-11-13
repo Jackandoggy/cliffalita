@@ -17,7 +17,7 @@
 
 
 from pyrogram import filters
-from pyrogram import random
+import random
 from pyrogram.errors import MessageNotModified, QueryIdInvalid, UserIsBlocked
 from pyrogram.types import CallbackQuery, Message
 
