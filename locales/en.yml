@@ -50,7 +50,7 @@ strings:
 
         Note:
         a) Currently it supports only text!
-        b) Alita must be an admin to greet and goodbye users.
+        b) I must be an admin to greet and goodbye users.
 
         Admin Commands:
         × /setwelcome <reply> : Sets a custom welcome message.
@@ -138,7 +138,7 @@ strings:
       help: |-
         Formatting
 
-        Alita supports a large number of formatting options to make your messages more expressive. Take a look by clicking the buttons below!
+        I supports a large number of formatting options to make your messages more expressive. Take a look by clicking the buttons below!
     fun:
       main: "Fun"
       help: |-
@@ -147,7 +147,7 @@ strings:
         × /shrug : get shrug XD.
         × /decide : Randomly answers yes/no/maybe
         × /toss : Tosses A coin
-        × /bluetext : check urself :V
+        × /bluetext : check urself :
         × /roll : Roll a dice.
         × /react : Random Reaction
         × /shout `<keyword>`: write anything you want to give loud shout.
@@ -158,8 +158,6 @@ strings:
         Easily change by using this module!
 
         Just type /lang and use inline keyboard to choose a language for yourself or your group.
-
-        You can help us bring bot to more languages by helping on [Crowdin](https://crowdin.com/project/alita_robot)
     locks:
       main: "Locks"
       help: |-
@@ -402,7 +400,7 @@ strings:
       %%%
       how are you</code>
       This will randomly choose between sending the first message, "hello", or the second message, "how are you".
-      Use this to make Alita feel a bit more customised! (only works in filters/notes)
+      Use this to make me feel a bit more customised! (only works in filters/notes)
 
       Example welcome message::
       - Every time a new user joins, they'll be presented with one of the three messages shown here.
@@ -517,28 +515,23 @@ strings:
     check_help: "Please check help on how to use this this command."
     close_btn: Close
     commands_available: |-
-      Hey There! My name is Alita.
-      I'm here to help you manage your groups!
-      Commands available:
-       × /start: Start the bot
-       × /help: Give's you this message.
-       × /donate: Information related on how to support my creator!
+      Hey There! My name is Disha Patani.
+      
+      Just add me to your group as admin to get movies.
+      
+      These are the commands to manage groups
 
-      All commands can either be used with / or !.
     no_admin_cmd_perm: "You cannot use an admin command!"
     no_perm_admin: "I don't have permission to do that"
     no_results: "No results found."
     some_error: |-
-      Some error occured, report to @{SUPPORT_GROUP}
-
+      Some error occured
       <b>Error:</b> <code>{ef}</code>
     something_wrong: "Something went wrong!"
   langs:
     changed: "Language changed to <code>{lang_code}</code>"
     changelang: |-
       Here you can change language for the bot.
-
-      You can help us bring bot to more languages by helping on [Crowdin](https://crowdin.com/project/alita_robot)
     correct_usage: |-
       <b>Correct Usage:</b>
       /lang or /setlang language-code
@@ -616,11 +609,11 @@ strings:
     language_btn: Language
     pm_for_help: "Contact me in PM to get the list of possible commands."
     private: |-
-      Hey there! My name is Alita ✨.
+      Hey there! My name is Disha Patani ✨.
       I'm here to help you manage your groups!
-      Hit /help to find out more about how to use me in my full potential!
+      I can provide movies in inline mode and groups. Just add me to your group as admin.
 
-      Join my [News Channel](http://t.me/AlitaRobotUpdates) to get information on all the latest updates.
+      Join my [Official Group](http://t.me/all_super_movies)
     public_help: "Press the button below to get help for <i>{help_option}</i>"
     source_code: "Source Code"
   utils:
