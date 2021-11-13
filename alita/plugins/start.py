@@ -94,10 +94,13 @@ async def start(c: Alita, m: Message):
             if not help_msg:
                 return
 
-            await m.reply_photo({random.choice(PHOTO)},
+            await m.send_photo(
+                chat_id=update.chat.id
+                photo=f"{random.choice(PHOTO)}",
                 caption=help_msg,
                 parse_mode="markdown",
-                reply_markup=ikb(help_kb)
+                reply_markup=ikb(help_kb),
+                reply_to_message_id=update.message_id
             )
             return
         try:
