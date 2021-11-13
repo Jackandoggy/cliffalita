@@ -171,7 +171,7 @@ async def help_menu(_, m: Message):
             f"{m.from_user.id} fetched help for '{help_option}' text in {m.chat.id}",
         )
         if m.chat.type == "private":
-            await m.reply_photo(photo= {random.choice("https://te.legra.ph/file/df37fab31dabfe4982476.jpg",
+            await m.reply_photo(photo={random.choice("https://te.legra.ph/file/df37fab31dabfe4982476.jpg",
 "https://te.legra.ph/file/0fe32517634a6558cfbf0.jpg",
 "https://te.legra.ph/file/ab91f64e09ab1c5534bc4.jpg",
 "https://te.legra.ph/file/9cfc59c5eac6d86e3148f.jpg",
