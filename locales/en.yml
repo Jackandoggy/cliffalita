@@ -150,6 +150,8 @@ strings:
         × /bluetext : check urself :
         × /roll : Roll a dice.
         × /react : Random Reaction
+        × /truth : Get a truth question
+        × /dare : Get a punishment
         × /shout `<keyword>`: write anything you want to give loud shout.
     language:
       main: "Language"
