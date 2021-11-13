@@ -171,16 +171,14 @@ async def help_menu(_, m: Message):
             f"{m.from_user.id} fetched help for '{help_option}' text in {m.chat.id}",
         )
         if m.chat.type == "private":
-            await m.reply_text(
-                help_msg,
+            await m.reply_photo(photo= {random.choice(PHOTO)},
+                caption = help_msg,
                 parse_mode="markdown",
-                reply_markup=ikb(help_kb),
-                quote=True,
-                disable_web_page_preview=True,
+                reply_markup=ikb(help_kb)
             )
         else:
-            await m.reply_text(
-                (tlang(m, "start.public_help").format(help_option=help_option)),
+            await m.reply_photo(photo= {random.choice(PHOTO)},
+                caption=(tlang(m, "start.public_help").format(help_option=help_option)),
                 reply_markup=ikb(
                     [[("Help", f"t.me/{BOT_USERNAME}?start={help_option}", "url")]],
                 ),
