@@ -517,11 +517,11 @@ strings:
     check_help: "Please check help on how to use this this command."
     close_btn: Close
     commands_available: |-
-      Hey There! My name is Disha Patani.
+      Hey There! I can manage your group group with advanced features.
       
-      Just add me to your group as admin to get movies.
+      Just make sure I'm admin in your group.
       
-      These are the commands to manage groups
+      These are my Features❤️
 
     no_admin_cmd_perm: "You cannot use an admin command!"
     no_perm_admin: "I don't have permission to do that"
