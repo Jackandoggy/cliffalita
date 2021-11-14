@@ -17,6 +17,7 @@
 
 from html import escape
 from secrets import choice
+import random
 
 from pyrogram.errors import MessageTooLong
 from pyrogram.types import Message
@@ -27,6 +28,13 @@ from alita.tr_engine import tlang
 from alita.utils import fun_strings
 from alita.utils.custom_filters import command
 from alita.utils.extract_user import extract_user
+
+TRUTH = [
+         "Which is your first love",
+         "The time when you cried most",
+         "The person you hate most",
+         "The momment you missed your parents most"
+        ]
 
 
 @Alita.on_message(command("shout"))
@@ -58,6 +66,13 @@ async def fun_shout(_, m: Message):
 async def fun_run(_, m: Message):
     await m.reply_text(choice(fun_strings.RUN_STRINGS))
     LOGGER.info(f"{m.from_user.id} runed in {m.chat.id}")
+    return
+
+
+@Alita.on_message(command("truth"))
+async def fun_run(_, m: Message):
+    await m.reply_text(random.choice(TRUTH))
+    LOGGER.info(f"asked for truth to {m.from_user.id}")
     return
 
 
