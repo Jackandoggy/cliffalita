@@ -202,7 +202,8 @@ async def help_menu(_, m: Message):
             keyboard = ikb([[("Help", f"t.me/{BOT_USERNAME}?start=help", "url")]])
             msg = tlang(m, "start.pm_for_help")
 
-        await m.reply_photo(photo=f"{random.choice(PHOTO)}",
+        await m.reply_photo(photo=
+                            {random.choice(PHOTO)},
                             caption=msg,
                             reply_markup=keyboard
         )
