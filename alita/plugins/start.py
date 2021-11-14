@@ -106,11 +106,13 @@ async def start(c: Alita, m: Message):
             )
             return
         try:
-            await m.reply_text(
-                (tlang(m, "start.private")),
+            await c.send_photo(
+                chat_id=m.chat.id,
+                photo=f"{random.choice(PHOTO)}",
+                caption=(tlang(m, "start.private")),
+                parse_mode="markdown",
                 reply_markup=(await gen_start_kb(m)),
-                quote=True,
-                disable_web_page_preview=True,
+                reply_to_message_id=m.message_id\
             )
         except UserIsBlocked:
             LOGGER.warning(f"Bot blocked by {m.from_user.id}")
