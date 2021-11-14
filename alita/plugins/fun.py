@@ -30,18 +30,21 @@ from alita.utils.custom_filters import command
 from alita.utils.extract_user import extract_user
 
 TRUTH = [
-         "Which is your first love",
-         "The time when you cried most",
-         "The person you hate most",
-         "The momment you missed your parents most"
+         "Which is your first love?",
+         "The time when you cried most?",
+         "The person you hate most?",
+         "The momment you missed your parents most?",
+         "Will you slap your best friend for 1 lakh rupees?"
         ]
 
 DARE = [
-         "Send I love you to the first person message you"
-         "Sing a song in the Voice chat"
-         "Do a backflip"
-         "Block one of your contact"
-         "Add 5 members to this group"
+         "Send I love you to the first person message you",
+         "Sing a song in the Voice chat",
+         "Do a backflip",
+         "Block one of your contact",
+         "Add 5 members to this group",
+         "Send a screenshot of your search history",
+         "Set your favorite actress picture as your dp"
         ]
 
 @Alita.on_message(command("shout"))
@@ -77,10 +80,18 @@ async def fun_run(_, m: Message):
 
 
 @Alita.on_message(command("truth"))
-async def fun_run(_, m: Message):
+async def fun_truth(_, m: Message):
     await m.reply_chat_action("typing")  
     await m.reply_text(random.choice(TRUTH))
     return
+
+
+@Alita.on_message(command("dare"))
+async def fun_dare(_, m: Message):
+    await m.reply_chat_action("typing")  
+    await m.reply_text(random.choice(DARE))
+    return
+
 
 @Alita.on_message(command("slap"))
 async def fun_slap(c: Alita, m: Message):
