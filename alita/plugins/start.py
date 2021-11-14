@@ -74,7 +74,7 @@ async def close_admin_callback(_, q: CallbackQuery):
 
 
 @Alita.on_message(
-    command("start") & (filters.group | filters.private),
+    command("stat") & (filters.group | filters.private),
 )
 async def start(c: Alita, m: Message):
     if m.chat.type == "private":
