@@ -95,7 +95,7 @@ async def start(c: Alita, m: Message):
                 return
 
             await Alita.send_photo(
-                chat_id=message.chat.id,
+                chat_id=m.chat.id,
                 photo=f"{random.choice(PHOTO)}",
                 caption=help_msg,
                 parse_mode="markdown",
