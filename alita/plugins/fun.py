@@ -36,6 +36,13 @@ TRUTH = [
          "The momment you missed your parents most"
         ]
 
+DARE = [
+         "Send I love you to the first person message you"
+         "Sing a song in the Voice chat"
+         "Do a backflip"
+         "Block one of your contact"
+         "Add 5 members to this group"
+        ]
 
 @Alita.on_message(command("shout"))
 async def fun_shout(_, m: Message):
@@ -71,11 +78,17 @@ async def fun_run(_, m: Message):
 
 @Alita.on_message(command("truth"))
 async def fun_run(_, m: Message):
-    await m.reply_chat_action("typing")  
+    await m.send_chat_action(chat_id, "typing")  
     await m.reply_text(random.choice(TRUTH))
-    LOGGER.info(f"asked for truth to {m.from_user.id}")
+    )
     return
 
+@Alita.on_message(command("dare"))
+async def fun_run(_, m: Message):
+    await m.reply_chat_action("typing")  
+    await m.reply_text(random.choice(DARE))
+    )
+    return
 
 @Alita.on_message(command("slap"))
 async def fun_slap(c: Alita, m: Message):
