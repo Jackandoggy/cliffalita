@@ -80,14 +80,12 @@ async def fun_run(_, m: Message):
 async def fun_run(_, m: Message):
     await m.reply_chat_action("typing")  
     await m.reply_text(random.choice(TRUTH))
-    )
     return
 
 @Alita.on_message(command("dare"))
 async def fun_run(_, m: Message):
     await m.reply_chat_action("typing")  
     await m.reply_text(random.choice(DARE))
-    )
     return
 
 @Alita.on_message(command("slap"))
