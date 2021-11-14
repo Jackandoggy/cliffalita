@@ -39,7 +39,7 @@ TRUTH = [
 
 DARE = [
          "Send I love you to the first person message you",
-         "Sing a song in the Voice chat",
+         "Sing a song and send it to your 5 friends",
          "Do a backflip",
          "Block one of your contact",
          "Add 5 members to this group",
