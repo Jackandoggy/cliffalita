@@ -183,7 +183,7 @@ async def help_menu(_, m: Message):
                 reply_markup=ikb(help_kb)
             )
         else:
-            await m.reply_photo(photo= {random.choice(PHOTO)},
+            await m.reply_photo(photo=f"{random.choice(PHOTO)}",
                 caption=(tlang(m, "start.public_help").format(help_option=help_option)),
                 reply_markup=ikb(
                     [[("Help", f"t.me/{BOT_USERNAME}?start={help_option}", "url")]],
