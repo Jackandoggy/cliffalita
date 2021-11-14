@@ -33,13 +33,15 @@ from alita.utils.start_utils import (
     get_private_note,
     get_private_rules,
 )
-PHOTO = ["https://te.legra.ph/file/df37fab31dabfe4982476.jpg",
-"https://te.legra.ph/file/0fe32517634a6558cfbf0.jpg",
-"https://te.legra.ph/file/ab91f64e09ab1c5534bc4.jpg",
-"https://te.legra.ph/file/9cfc59c5eac6d86e3148f.jpg",
-"https://te.legra.ph/file/c557935ac8f132b84cda9.jpg",
-"https://te.legra.ph/file/41231f07aaa74efd91d05.jpg",
-"https://te.legra.ph/file/59a12344c4cc1a2842512.jpg"]
+PHOTO = [
+    "https://te.legra.ph/file/df37fab31dabfe4982476.jpg",
+    "https://te.legra.ph/file/0fe32517634a6558cfbf0.jpg",
+    "https://te.legra.ph/file/ab91f64e09ab1c5534bc4.jpg",
+    "https://te.legra.ph/file/9cfc59c5eac6d86e3148f.jpg",
+    "https://te.legra.ph/file/c557935ac8f132b84cda9.jpg",
+    "https://te.legra.ph/file/41231f07aaa74efd91d05.jpg",
+    "https://te.legra.ph/file/59a12344c4cc1a2842512.jpg"
+    ]
 
 @Alita.on_message(
     command("donate") & (filters.group | filters.private),
@@ -161,6 +163,15 @@ async def commands_menu(_, q: CallbackQuery):
 @Alita.on_message(command("help"))
 async def help_menu(_, m: Message):
     from alita import BOT_USERNAME
+PIC = [
+    "https://te.legra.ph/file/df37fab31dabfe4982476.jpg",
+    "https://te.legra.ph/file/0fe32517634a6558cfbf0.jpg",
+    "https://te.legra.ph/file/ab91f64e09ab1c5534bc4.jpg",
+    "https://te.legra.ph/file/9cfc59c5eac6d86e3148f.jpg",
+    "https://te.legra.ph/file/c557935ac8f132b84cda9.jpg",
+    "https://te.legra.ph/file/41231f07aaa74efd91d05.jpg",
+    "https://te.legra.ph/file/59a12344c4cc1a2842512.jpg"
+    ]
 
     if len(m.text.split()) >= 2:
         help_option = (m.text.split(None, 1)[1]).lower()
@@ -174,13 +185,8 @@ async def help_menu(_, m: Message):
             f"{m.from_user.id} fetched help for '{help_option}' text in {m.chat.id}",
         )
         if m.chat.type == "private":
-            await m.reply_photo({random.choice("https://te.legra.ph/file/df37fab31dabfe4982476.jpg",
-"https://te.legra.ph/file/0fe32517634a6558cfbf0.jpg",
-"https://te.legra.ph/file/ab91f64e09ab1c5534bc4.jpg",
-"https://te.legra.ph/file/9cfc59c5eac6d86e3148f.jpg",
-"https://te.legra.ph/file/c557935ac8f132b84cda9.jpg",
-"https://te.legra.ph/file/41231f07aaa74efd91d05.jpg",
-"https://te.legra.ph/file/59a12344c4cc1a2842512.jpg")},
+            await m.reply_photo(
+                {random.choice(PIC)},
                 caption = help_msg,
                 parse_mode="markdown",
                 reply_markup=ikb(help_kb)
