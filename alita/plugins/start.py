@@ -176,8 +176,7 @@ async def help_menu(_, m: Message):
             f"{m.from_user.id} fetched help for '{help_option}' text in {m.chat.id}",
         )
         if m.chat.type == "private":
-            await m.reply_photo(
-                {random.choice(PHOTO)},
+            await m.reply_photo(f"{random.choice(PHOTO)}",
                 caption = help_msg,
                 parse_mode="markdown",
                 reply_markup=ikb(help_kb)
