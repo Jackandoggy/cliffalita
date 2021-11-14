@@ -187,7 +187,7 @@ async def help_menu(c: Alita, m: Message):
                 reply_to_message_id=m.message_id
             )
         else:
-            await m.reply_photo(photo=f"{random.choice(PHOTO)}",
+            await m.reply_photo(photo=f"https://te.legra.ph/file/0fe32517634a6558cfbf0.jpg",
                 caption=(tlang(m, "start.public_help").format(help_option=help_option)),
                 reply_markup=ikb(
                     [[("Help", f"t.me/{BOT_USERNAME}?start={help_option}", "url")]],
