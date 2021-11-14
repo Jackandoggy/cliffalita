@@ -206,13 +206,11 @@ async def help_menu(c: Alita, m: Message):
             keyboard = ikb([[("Help", f"t.me/{BOT_USERNAME}?start=help", "url")]])
             msg = tlang(m, "start.pm_for_help")
 
-        await c.send_photo(
-                chat_id=m.chat.id,
+        await m.reply_photo(
                 photo=f"{random.choice(PHOTO)}",
                 caption=msg,
                 parse_mode="markdown",
                 reply_markup=keyboard,
-                reply_to_message_id=m.message_id
                 )
 
     return
