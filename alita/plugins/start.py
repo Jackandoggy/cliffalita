@@ -100,7 +100,7 @@ async def start(c: Alita, m: Message):
                 caption=help_msg,
                 parse_mode="markdown",
                 reply_markup=ikb(help_kb),
-                reply_to_message_id=update.message_id
+                reply_to_message_id=from.message_id
             )
             return
         try:
