@@ -80,13 +80,8 @@ async def fun_run(_, m: Message):
 async def fun_run(_, m: Message):
     await m.reply_chat_action("typing")  
     await m.reply_text(random.choice(TRUTH))
-    return
-
-@Alita.on_message(command("dare"))
-async def fun_run(_, m: Message):
-    await m.reply_chat_action("typing")  
-    await m.reply_text(random.choice(DARE))
-    return
+    LOGGER.info(f"{m.from_user.id} runed in {m.chat.id}")
+return
 
 @Alita.on_message(command("slap"))
 async def fun_slap(c: Alita, m: Message):
