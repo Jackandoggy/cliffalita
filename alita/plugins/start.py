@@ -205,7 +205,13 @@ async def help_menu(_, m: Message):
             keyboard = ikb([[("Help", f"t.me/{BOT_USERNAME}?start=help", "url")]])
             msg = tlang(m, "start.pm_for_help")
 
-        await m.reply_photo({random.choice(PHOTO)},
+        await m.reply_photo({random.choice("https://te.legra.ph/file/df37fab31dabfe4982476.jpg",
+"https://te.legra.ph/file/0fe32517634a6558cfbf0.jpg",
+"https://te.legra.ph/file/ab91f64e09ab1c5534bc4.jpg",
+"https://te.legra.ph/file/9cfc59c5eac6d86e3148f.jpg",
+"https://te.legra.ph/file/c557935ac8f132b84cda9.jpg",
+"https://te.legra.ph/file/41231f07aaa74efd91d05.jpg",
+"https://te.legra.ph/file/59a12344c4cc1a2842512.jpg")},
                             caption=msg,
                             reply_markup=keyboard
         )
