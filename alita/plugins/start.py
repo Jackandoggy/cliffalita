@@ -163,7 +163,7 @@ async def commands_menu(_, q: CallbackQuery):
 
 
 @Alita.on_message(command("help"))
-async def help_menu(_, m: Message):
+async def help_menu(c: Alita, m: Message):
     from alita import BOT_USERNAME
 
     if len(m.text.split()) >= 2:
@@ -178,7 +178,7 @@ async def help_menu(_, m: Message):
             f"{m.from_user.id} fetched help for '{help_option}' text in {m.chat.id}",
         )
         if m.chat.type == "private":
-            await m.send_photo(
+            await c.send_photo(
                 chat_id=m.chat.id,
                 photo=f"{random.choice(PHOTO)}",
                 caption=help_msg,
@@ -206,7 +206,7 @@ async def help_menu(_, m: Message):
             keyboard = ikb([[("Help", f"t.me/{BOT_USERNAME}?start=help", "url")]])
             msg = tlang(m, "start.pm_for_help")
 
-        await m.send_photo(
+        await c.send_photo(
                 chat_id=m.chat.id,
                 photo=f"{random.choice(PHOTO)}",
                 caption=msg,
