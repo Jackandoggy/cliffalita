@@ -71,6 +71,7 @@ async def fun_run(_, m: Message):
 
 @Alita.on_message(command("truth"))
 async def fun_run(_, m: Message):
+    await m.reply_chat_action("typing")  
     await m.reply_text(random.choice(TRUTH))
     LOGGER.info(f"asked for truth to {m.from_user.id}")
     return
