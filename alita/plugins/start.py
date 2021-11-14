@@ -94,7 +94,7 @@ async def start(c: Alita, m: Message):
             if not help_msg:
                 return
 
-            await bot.send_photo(
+            await Alita.send_photo(
                 chat_id=update.chat.id,
                 photo=f"{random.choice(PHOTO)}",
                 caption=help_msg,
