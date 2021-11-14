@@ -178,10 +178,13 @@ async def help_menu(_, m: Message):
             f"{m.from_user.id} fetched help for '{help_option}' text in {m.chat.id}",
         )
         if m.chat.type == "private":
-            await m.reply_photo(photo=f"{random.choice(PHOTO)}",
-                caption = help_msg,
+            await m.send_photo(
+                chat_id=m.chat.id,
+                photo=f"{random.choice(PHOTO)}",
+                caption=help_msg,
                 parse_mode="markdown",
-                reply_markup=ikb(help_kb)
+                reply_markup=ikb(help_kb),
+                reply_to_message_id=m.message_id
             )
         else:
             await m.reply_photo(photo=f"{random.choice(PHOTO)}",
@@ -203,11 +206,14 @@ async def help_menu(_, m: Message):
             keyboard = ikb([[("Help", f"t.me/{BOT_USERNAME}?start=help", "url")]])
             msg = tlang(m, "start.pm_for_help")
 
-        await m.reply_photo(photo=
-                            {random.choice(PHOTO)},
-                            caption=msg,
-                            reply_markup=keyboard
-        )
+        await m.send_photo(
+                chat_id=m.chat.id,
+                photo=f"{random.choice(PHOTO)}",
+                caption=msg,
+                parse_mode="markdown",
+                reply_markup=keyboard,
+                reply_to_message_id=m.message_id
+                )
 
     return
 
