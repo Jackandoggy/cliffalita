@@ -40,7 +40,14 @@ PHOTO = [
     "https://te.legra.ph/file/9cfc59c5eac6d86e3148f.jpg",
     "https://te.legra.ph/file/c557935ac8f132b84cda9.jpg",
     "https://te.legra.ph/file/41231f07aaa74efd91d05.jpg",
-    "https://te.legra.ph/file/59a12344c4cc1a2842512.jpg"
+    "https://te.legra.ph/file/59a12344c4cc1a2842512.jpg",
+    "https://te.legra.ph/file/8128bcf0a55b898c9d31a.jpg",
+    "https://te.legra.ph/file/f796c0921d928078cbd81.jpg",
+    "https://te.legra.ph/file/8932bbe81858194c5d6ca.jpg",
+    "https://te.legra.ph/file/f68ef29827d4479c201c6.png",
+    "https://te.legra.ph/file/acad3d36874b5ed405a53.jpg",
+    "https://te.legra.ph/file/e61eb35db2b4f9e733894.jpg",
+    "https://te.legra.ph/file/b26a06ea4f688acfff34b.jpg"
     ]
 
 @Alita.on_message(
