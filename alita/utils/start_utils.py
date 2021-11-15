@@ -66,7 +66,7 @@ async def gen_start_kb(q: Message or CallbackQuery):
                 ),
                 (
                     f"{(tlang(q, 'start.support_group'))} 📣",
-                    f"https://t.me/{SUPPORT_GROUP}",
+                    f"https://t.me/song_requestgroup",
                     "url",
                 ),
             ],
