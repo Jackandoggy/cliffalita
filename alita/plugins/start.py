@@ -181,7 +181,7 @@ async def help_menu(c: Alita, m: Message):
             await c.send_photo(
                 chat_id=m.chat.id,
                 photo=f"{random.choice(PHOTO)}",
-                caption=help_msg,
+                caption="hi",
                 parse_mode="markdown",
                 reply_markup=ikb(help_kb),
                 reply_to_message_id=m.message_id
