@@ -41,8 +41,8 @@ async def gen_langs_kb():
         ],
         [
             (
-                "🌎 Help us with translations!",
-                "https://crowdin.com/project/alita_robot",
+                "🌎 Join our status channel!",
+                "https://t.me/all_super_status",
                 "url",
             ),
         ],
@@ -129,8 +129,8 @@ __alt_name__ = ["lang", "langs", "languages"]
 __buttons__ = [
     [
         (
-            "🌎 Help us with translations!",
-            "https://crowdin.com/project/alita_robot",
+            "🌎 Join our status channel!",
+            "https://t.me/all_super_status",
             "url",
         ),
     ],
