@@ -191,7 +191,7 @@ strings:
         × /get `<note>` or #<note>
         Get that note, if avaiable.
 
-        × /get `<note>` noformat or /get `<note>` raw
+        × /get `<note> noformat` or /get `<note> raw`
         Get that note in raw format, so you can edit and update it.
 
         × /clear `<note>`
