@@ -34,7 +34,7 @@ from alita.database.warns_db import Warns, WarnSettings
 from alita.utils.custom_filters import command
 
 
-@Alita.on_message(command("stats", dev_cmd=True))
+@Alita.on_message(command("groupstats", dev_cmd=True))
 async def get_stats(_, m: Message):
     # initialise
     bldb = Blacklist
@@ -58,7 +58,6 @@ async def get_stats(_, m: Message):
         f"<b>Anti Channel Pin:</b> <code>{(pinsdb.count_chats('antichannelpin'))}</code> enabled chats\n"
         f"<b>Clean Linked:</b> <code>{(pinsdb.count_chats('cleanlinked'))}</code> enabled chats\n"
         f"<b>Filters:</b> <code>{(fldb.count_filters_all())}</code> in <code>{(fldb.count_filters_chats())}</code> chats\n"
-        f"    <b>Aliases:</b> <code>{(fldb.count_filter_aliases())}</code>\n"
         f"<b>Blacklists:</b> <code>{(bldb.count_blacklists_all())}</code> in <code>{(bldb.count_blackists_chats())}</code> chats\n"
         f"    <b>Action Specific:</b>\n"
         f"        <b>None:</b> <code>{(bldb.count_action_bl_all('none'))}</code> chats\n"
