@@ -266,6 +266,7 @@ strings:
         × /github `<username>`: Search for the user using github api!
         × /lyrics `<song>`: Get the lyrics of the song you specify!
         × /weebify `<text>` or `<reply to message>`: To weebify the text.
+        × /imdb `<movie name>`: To get movie details
 
         **Example:**
         `/info @username`: this fetches the information about a user from the database.
