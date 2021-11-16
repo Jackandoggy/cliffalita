@@ -66,16 +66,16 @@ async def gen_start_kb(q: Message or CallbackQuery):
                 ),
                 (
                     f"{(tlang(q, 'start.support_group'))} 📣",
-                    f"https://t.me/song_requestgroup",
+                    f"https://t.me/all_super_movies",
                     "url",
                 ),
             ],
             [(f"📚 {(tlang(q, 'start.commands_btn'))}", "commands")],
             [
-                (f"🌐 {(tlang(q, 'start.language_btn'))}", "chlang"),
+                (f"🎸 {(tlang(q, 'start.language_btn'))}", "https://t.me/free_music123"),
                 (
-                    f"🗃️ {(tlang(q, 'start.source_code'))}",
-                    "https://t.me/free_music123/22903",
+                    f"🎸 {(tlang(q, 'start.source_code'))}",
+                    "https://t.me/song_requestgroup",
                     "url",
                 ),
             ],
