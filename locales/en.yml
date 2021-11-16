@@ -420,8 +420,6 @@ strings:
       user_added_to_watch: |-
         You have been added to my global ban list!
         <b>Reason:</b> <code>{gban_reason}</code>
-
-        <b>Appeal Chat:</b> @{SUPPORT_GROUP}
     here_gbanned_start: "Here are all the globally banned geys!\n\n"
     none_gbanned: "There aren't any gbanned users...!"
     num_gbans: "Number of people gbanned: <code>{count}</code>"
@@ -441,8 +439,6 @@ strings:
       user_removed_from_list: "You have been removed from my global ban list!"
     watcher_banned: |-
       This user ({user_gbanned}) has been banned globally!
-
-      To get unbanned, appeal at @{SUPPORT_GROUP}
   blacklist:
     bl_watcher:
       action_kick: "Kicked {user} for sending a blacklisted word!"
@@ -478,8 +474,6 @@ strings:
       speedtest_txt: |-
         Speedtest
 
-        <b>Host:</b> <code>{host}</code>
-
         <b>Ping:</b> <code>{ping}</code> ms
         <b>Download:</b> <code>{download}</code> Mbps
         <b>Upload:</b> <code>{upload}</code> Mbps
@@ -493,7 +487,7 @@ strings:
 
       All the fund would be put into my services such as database, storage and hosting!
 
-      You can donate by contacting my owner here: @DivideProjectsBot
+      You can donate by contacting my owner here: @Geronimo1234_bot
     back_btn: Back
     check_help: "Please check help on how to use this this command."
     close_btn: Close
@@ -580,16 +574,14 @@ strings:
   start:
     add_chat_btn: "Add me to a chat!"
     commands_btn: Commands & Help
-    group: "I'm alive :3"
+    group: "I'm online! [Click here](http://t.me/best_auto_filter_bot?start=help) if you have any doubt on using me"
     info_page: |-
-      • @Alita_Robot
+      • @best_auto_filter_bot
 
       <b>Version:</b> <i>{version}</i>
-
-      <b>Developers:</b> [Divkix](https://github.com/Divkix)
-      <b>Owner:</b> [{Owner}](tg://user?id={ID})
-    support_group: Support
-    language_btn: Language
+      <b>Owner:</b> [Geronimo](tg://user?id=947082166)
+    support_group: Movies
+    language_btn: Channel
     pm_for_help: "Contact me in PM to get the list of possible commands."
     private: |-
       Hey there! My name is Disha Patani ✨.
@@ -598,7 +590,7 @@ strings:
 
       Join my [Official Group](http://t.me/all_super_movies)
     public_help: "Press the button below to get help for <i>{help_option}</i>"
-    source_code: "Source Code"
+    source_code: "Group"
   utils:
     gif_id:
       reply_gif: "Please reply to a gif to get it's ID."
@@ -621,7 +613,7 @@ strings:
       no_lyrics_found: "Couldn't find any lyrics for that song!"
       no_song_given: "You haven't specified which song to look for!"
       searching: "Finding lyrics for <code>{song_name}<code>..."
-      song_not_found: "Song not found!"
+      song_not_found: "Song not found! Hmm, this usually happens"
     translate:
       translate_usage: "Usage: /tr <language> text for translation (Can be also used in reply to a message)."
       translating: Translating...
