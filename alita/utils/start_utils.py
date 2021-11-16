@@ -72,7 +72,11 @@ async def gen_start_kb(q: Message or CallbackQuery):
             ],
             [(f"📚 {(tlang(q, 'start.commands_btn'))}", "commands")],
             [
-                (f"🎸 {(tlang(q, 'start.language_btn'))}", "https://t.me/free_music123"),
+                (
+                    f"🎸 {(tlang(q, 'start.language_btn'))}", 
+                    "https://t.me/free_music123"),
+                    "url",
+                ),
                 (
                     f"🎸 {(tlang(q, 'start.source_code'))}",
                     "https://t.me/song_requestgroup",
