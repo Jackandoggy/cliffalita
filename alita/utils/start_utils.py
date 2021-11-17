@@ -66,8 +66,7 @@ async def gen_start_kb(q: Message or CallbackQuery):
                 ),
                 (
                     f"{(tlang(q, 'start.support_group'))} 🎬",
-                    f"https://t.me/all_super_movies",
-                    "url",
+                    "switch_inline_query_current_chat=''",
                 ),
             ],
             [(f"📚 {(tlang(q, 'start.commands_btn'))}", "commands")],
