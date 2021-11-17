@@ -34,7 +34,10 @@ TRUTH = [
          "The time when you cried most?",
          "The person you hate most?",
          "The momment you missed your parents most?",
-         "Will you slap your best friend for 1 lakh rupees?"
+         "Will you slap your best friend for 1 lakh rupees?",
+         "Which is first, hen or egg?",
+         "Are you afraid of a cockroach or lizard?",
+         "Do you know the name of your grandfather's grandfather?"
         ]
 
 DARE = [
@@ -42,9 +45,10 @@ DARE = [
          "Sing a song and send it to your 5 friends",
          "Do a backflip",
          "Block one of your contact",
-         "Add 5 members to this group",
+         "Send a selfie with a cockroach on your hand",
          "Send a screenshot of your search history",
-         "Set your favorite actress picture as your dp"
+         "Set your favorite actress picture as your dp",
+         "Make your mobile number public"
         ]
 
 @Alita.on_message(command("shout"))
