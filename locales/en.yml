@@ -492,9 +492,11 @@ strings:
     check_help: "Please check help on how to use this this command."
     close_btn: Close
     commands_available: |-
-      Hey There! I can manage your group group with advanced features.
+      Hey There! I can manage your group with advanced features.
       
       Just make sure I'm admin in your group.
+      
+      Forward me a movie file from any channel to save files of that channel
       
       These are my Features❤️
 
