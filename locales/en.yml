@@ -141,12 +141,13 @@ strings:
         × /dare : Get a punishment
         × /shout `<keyword>`: write anything you want to give loud shout.
     language:
-      main: "Language"
+      main: "Add files"
       help: |-
-        Not able to change language of the bot?
-        Easily change by using this module!
-
-        Just type /lang and use inline keyboard to choose a language for yourself or your group.
+        Forward me a movie file from any movie channel. I will save those files. 
+        Make me admin in channel if its private. 
+        You can also forward all wanted movies to your channel and send last movie file of that channel
+        
+        Make sure your channel has only movie files!
     locks:
       main: "Locks"
       help: |-
